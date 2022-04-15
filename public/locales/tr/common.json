@@ -1,0 +1,18 @@
+{        
+    "add": "Ekle",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "deleteMany": "Çoklu Sil",
+    "cancel": "İptal",
+    "notAdd": "Ekleme",
+    "save": "Kaydet",    
+    "filter": "Filtrele",
+    "transactions": "İşlemler",
+    "nothing": "Hiçbiri",
+    "detail": "Detay",
+    "clear": "Temizle",
+    "yes": "Evet",
+    "no": "Hayır",
+    "search": "Ara",
+    "translation":"Tercüme"
+}

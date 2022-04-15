@@ -1,0 +1,98 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+  
+    "parser": "@typescript-eslint/parser",
+  
+    "extends": [
+      "airbnb",
+      "plugin:react/recommended",
+      "eslint:recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+  
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+      },
+  
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+  
+    "parserOptions": {
+      "ecmaFeatures": { "jsx": true },
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+  
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
+  
+    "rules": {
+      "no-restricted-imports": [ "error", { "patterns": [ "@material-ui/*/*/*","!@material-ui/core/test-utils/*" ] }],
+      "react/react-in-jsx-scope": "off",
+      "react/display-name": "off",
+      "no-underscore-dangle": "off",
+      "no-use-before-define": "off",
+      "@typescript-eslint/*": "off",
+      "max-len": [ 1, 165, 4 ],
+      "import/extensions": [ "error", "ignorePackages", { "js": "never", "jsx": "never","ts": "never", "tsx": "never" }],
+      "react/jsx-filename-extension": [ 1, { "extensions": [ ".js", ".jsx", ".ts", ".tsx" ] }],
+      "react/jsx-first-prop-new-line": [ 2, "multiline" ],
+      "react/jsx-max-props-per-line": [ 1, { "maximum": 3 }],
+      "indent": [ 2, 2, { "SwitchCase": 1 } ],
+      "quotes": [ 2, "single" ],
+      "linebreak-style": 0,
+      "semi": [ 1, "always" ],
+      "no-console": [ 0 ],
+      "no-loop-func": [ 0 ],
+      "new-cap": [ 0 ],
+      "no-trailing-spaces": [ 0 ],
+      "no-param-reassign": [ 0 ],
+      "func-names": [ 0 ],
+      "comma-dangle": [ 0 ],
+      "no-unused-expressions": [ 0 ],
+      "block-scoped-var": [ 0 ],
+      "react/prop-types": [ 0 ],
+      "no-nested-ternary": "off",
+      "no-multiple-empty-lines": [ 2, { "max": 2 }],
+      "import/newline-after-import": [ "error", { "count": 1 }],
+      "react/state-in-constructor": [ 2, "never" ],
+      "import/no-unresolved": "off",
+      "react/jsx-props-no-spreading": "off",
+      "padded-blocks": [ "error", { "blocks": "always" }],
+      "react/require-default-props": "off",
+      "prefer-arrow-callback":"off"
+    },
+    "overrides": [
+      {
+        "files": [ "*.js", "*.jsx" ],
+        "rules": {
+          "@typescript-eslint/...": "off",
+          "@typescript-eslint/explicit-module-boundary-types": "off"
+        }
+      },
+      {
+        "files": [ "*.ts","*.tsx" ],
+        "rules": {
+          "@typescript-eslint/explicit-module-boundary-types": "off",
+          "no-shadow": "off",
+          "@typescript-eslint/no-explicit-any": "off"
+        }
+      }
+    ]
+  }
+  

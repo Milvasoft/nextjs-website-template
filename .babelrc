@@ -1,0 +1,54 @@
+{
+  "presets": [
+    "next/babel",
+    "@babel/preset-react"
+  ],
+  "overrides": [
+    {
+      "include": [
+        "./node_modules"
+      ],
+      "plugins": [
+        [
+          "babel-plugin-transform-require-ignore",
+          {
+            "extensions": [
+              ".css"
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ],
+        "root": ".",
+        "alias": {
+          "@components/*": "./src/components/*",
+          "@assets/*": "./src/assets/*",
+          "@helpers/*": "./src/helpers/*",
+          "@utils/*": "./src/utils/*",
+          "@services/*": "./src/services/*",
+          "@styles/*": "./styles/*",
+          "@public/*": "./public/*",
+          "@src/*": "./src/*"
+        }
+      }
+    ], 
+    [
+      "@babel/plugin-transform-react-jsx",
+      {
+        "runtime": "automatic"
+      }
+    ]
+
+  ]
+}

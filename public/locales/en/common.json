@@ -1,0 +1,17 @@
+{
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteMany": "Delete Many",
+    "cancel": "Cancel",
+    "notAdd": "Not Add",
+    "save": "Save",
+    "filter": "Filter",
+    "transactions": "Transactions",
+    "nothing": "Nothing",
+    "detail": "Detail",
+    "clear": "Clear",
+    "yes": "Yes",
+    "search": "Search",
+    "translation":"Translation"
+}
