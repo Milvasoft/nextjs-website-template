@@ -2,7 +2,6 @@ import type { AppProps } from 'next/app';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import createEmotionCache from '@utils/createEmotionCache';
 import { appWithTranslation } from 'next-i18next';
-
 import '../styles/globals.css';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
